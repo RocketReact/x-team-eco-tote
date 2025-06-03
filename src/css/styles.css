@@ -3,7 +3,6 @@
   | include css partials with
   | default @import url()
   |============================
-*/
 /* Common styles */
 @import 'modern-normalize';
 @import url('./reset.css');
