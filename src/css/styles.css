@@ -5,12 +5,14 @@
   |============================
 */
 /* Common styles */
-@import url('./base.css');
+@import 'modern-normalize';
 @import url('./reset.css');
 @import url('./container.css');
 
 /* Sections style */
 @import url('./header.css');
+@import url('./nav.css');
+@import url('./feature.css');
 @import url('./benefits.css');
 @import url('./product.css');
 @import url('./gallery.css');
