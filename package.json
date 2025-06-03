@@ -5,13 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
-    "preview": "vite preview"
+    "build": "vite build --base=/x-team-eco-tote/",
+    "preview": "vite preview",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "glob": "^11.0.0",
     "postcss": "^8.4.41",
     "postcss-sort-media-queries": "^5.2.0",
+    "prettier": "^3.5.3",
     "vite": "^5.4.6"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
