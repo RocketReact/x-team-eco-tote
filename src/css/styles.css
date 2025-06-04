@@ -8,6 +8,7 @@
 @import url('./reset.css');
 
 /* Sections style */
+@import url('./base.css');
 @import url('./header.css');
 @import url('./nav.css');
 @import url('./hero.css');
@@ -19,81 +20,3 @@
 @import url('./contact.css');
 @import url('./footer.css');
 @import url('./mobile-menu.css');
-
-/* ================ VARIABLES ================ */
-
-:root {
-  --main-font: 'Fira Sans', sans-serif;
-  --secondary-font: 'Comfortaa', sans-serif;
-  --primary-color: #030a06;
-  --white-color: #ffffff;
-  --accent-color: #75d281;
-  --error-color: #d64040;
-  --form-placeholder-color: rgba(3, 10, 6, 0.6);
-  --hover-link-opacity: 0.5;
-  --background-color: #ebf8ed;
-  --form-input-border-color: rgba(3, 10, 6, 0.15);
-  --form-input-background-color: rgba(3, 10, 6, 0.05);
-  --primary-transition: 250ms linear;
-}
-
-/* ================ BASIC STYLES ================ */
-body {
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 16px;
-}
-img {
-  border-radius: 32px;
-}
-
-@media screen {
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-
-  .container {
-    max-width: 320px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .button {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    border: none;
-  }
-
-  .button-inverse {
-    background-color: transparent;
-    border: 1px solid var(--primary-color);
-    border-radius: 6px;
-    color: var(--white-color);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    padding-left: 64px;
-    padding-right: 64px;
-  }
-}
