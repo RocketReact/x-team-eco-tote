@@ -13,6 +13,7 @@
 
 .logo {
   padding: 14px 0;
+  margin-left: 4px;
 }
 
 .logo-icon {
@@ -28,6 +29,7 @@
   align-items: center;
   background-color: transparent;
   border: 0;
+  margin-right: -4px;
 }
 
 .burger-icon {
@@ -41,6 +43,15 @@
 
 .address-list {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-left: 0;
+  }
+
+  .burger {
+    margin-right: -16px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
