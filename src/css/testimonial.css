@@ -91,6 +91,12 @@
     flex-wrap: nowrap;
   }
 
+  .testimonial-title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 540px;
+  }
+
   .testimonial-card-item {
     max-width: calc((100% - 24px * 2) / 4);
   }
