@@ -1,0 +1,145 @@
+.contact {
+  padding: 32px 0;
+  background-color: var(--background-color);
+}
+
+.main-flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.container-title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sub-flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.main-title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: var(--primary-color);
+}
+
+.sub-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: var(--primary-color);
+}
+
+.form-field-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--primary-color);
+}
+
+.form-field-content-wrapper {
+  margin-bottom: 24px;
+}
+
+.content-wrapper {
+  margin-top: 8px;
+}
+
+.text-area {
+  width: 100%;
+  margin-top: 8px;
+  outline: none;
+}
+
+.form-input {
+  width: 100%;
+}
+
+.form-input {
+  border: 1px solid var(--form-input-border-color);
+  background: var(--form-input-background-color);
+  border-radius: 6px;
+  padding: 8px 12px;
+  height: 42px;
+}
+
+.form-input.text-area {
+  height: 180px;
+  resize: none;
+}
+
+.form-submit-btn {
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+  padding: 12px 24px;
+  height: 50px;
+}
+
+.block-image {
+  border-radius: 40px;
+}
+
+.content-wrapper {
+  position: relative;
+}
+
+input {
+  outline: none;
+  display: block;
+  box-sizing: border-box;
+}
+
+input:placeholder-shown {
+  border-color: gray;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+.error-message {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+input:invalid:not(:placeholder-shown) + .error-message {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .container-title {
+    width: 468px;
+  }
+
+  .form-submit-btn {
+    width: 249px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-flex-container {
+    flex-direction: row;
+  }
+  .sub-flex-container {
+    width: 644px;
+  }
+
+  .form-submit-btn {
+    width: 198px;
+  }
+}

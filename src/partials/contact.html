@@ -1,64 +1,74 @@
 <section class="contact">
-  <div class="container">
-    <div class="container-title">
-      <h2 class="main-title">Залишились питання? Зв'яжіться з нами!</h2>
-      <h3 class="sub-title">Ми тут, щоб допомогти!</h3>
-    </div>
-    <div class="container-form">
-      <form class="form">
-        <div class="form-field-content-wrapper">
-          <label class="form-field-label" for="user-name">Ім'я</label>
-          <div class="content-wrapper">
-            <input
-              class="form-input"
-              id="user-name"
-              name="user-name"
-              type="text"
-              required
-              placeholder="Іван"
-              minlength="5"
-              maxlength="64"
-            />
+  <div class="container main-flex-container">
+    <div class="sub-flex-container">
+      <div class="container-title">
+        <h2 class="main-title">Залишились питання? Зв'яжіться з нами!</h2>
+        <h3 class="sub-title">Ми тут, щоб допомогти!</h3>
+      </div>
+      <div class="container-form">
+        <form class="form">
+          <div class="form-field-content-wrapper">
+            <label class="form-field-label" for="user-name">Ім'я</label>
+            <div class="content-wrapper">
+              <input
+                class="form-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+                required
+                placeholder="Іван"
+                minlength="5"
+                maxlength="64"
+              />
+              <div class="error-message">
+                Ім’я повинно містити від 5 до 64 символів
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="form-field-content-wrapper">
-          <label class="form-field-label" for="form-email"
-            >Електронна пошта</label
-          >
-          <div class="content-wrapper">
-            <input
-              class="form-input"
-              id="form-email"
-              name="user-email"
-              type="email"
-              required
-              placeholder="hello@ecotote.com"
-              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-            />
+          <div class="form-field-content-wrapper">
+            <label class="form-field-label" for="form-email"
+              >Електронна пошта</label
+            >
+            <div class="content-wrapper">
+              <input
+                class="form-input"
+                id="form-email"
+                name="user-email"
+                type="email"
+                required
+                placeholder="hello@ecotote.com"
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              />
+              <div class="error-message">
+                Email має бути у форматі name@dom.com
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="form-field-wrapper">
-          <label class="form-field-label" for="user-comment"
-            >Повідомлення</label
-          >
-          <textarea
-            class="text-area"
-            name="user-comment"
-            id="user-comment"
-            placeholder="Введіть своє повідомлення..."
-            maxlength="500"
-          ></textarea>
-        </div>
-        <button class="button form-submit-btn" type="submit">Надіслати</button>
-      </form>
+          <div class="form-field-content-wrapper">
+            <label class="form-field-label" for="user-comment"
+              >Повідомлення</label
+            >
+            <textarea
+              class="form-input text-area"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Введіть своє повідомлення..."
+              maxlength="500"
+            ></textarea>
+          </div>
+          <button class="button form-submit-btn" type="submit">
+            Надіслати
+          </button>
+        </form>
+      </div>
     </div>
     <div class="container-picture">
       <picture>
-        <!-- Desktop version: used when viewport is 1158px or wider -->
+        <!-- Desktop version: used when viewport is 1440px or wider -->
         <source
-          media="(min-width: 1158px)"
+          media="(min-width: 1440px)"
           srcset="
             ./img/contacts/contacts-img-desc.jpg    1x,
             ./img/contacts/contacts-img-desc@2x.jpg 2x
@@ -79,7 +89,7 @@
           src="./img/contacts/contacts-img-mob.jpg"
           srcset="./img/contacts/contacts-img-mob@2x.jpg 2x"
           alt="Робочий стіл з матеріалами для пошиття сумки"
-          class="card-image"
+          class="block-image"
           loading="lazy"
         />
       </picture>
