@@ -32,6 +32,7 @@
 
   .advantage-text {
     margin-bottom: 48px;
+    font-size: 18px;
     line-height: 1.6;
     color: var(--primary-color);
   }
@@ -66,6 +67,8 @@
   }
 }
 
+/* ================= TABLET ================== */
+
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .advantge {
     padding-top: 64px;
@@ -98,21 +101,26 @@
   }
 }
 
+/* ================= DESKTOP ================== */
+
 @media screen and (min-width: 1440px) {
   .advantge {
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 
   .advantge-title-wrapper {
+    margin-bottom: 24px;
   }
 
   .advantge-title {
-  }
-
-  .advantage-subtitle {
+    font-size: 48px;
   }
 
   .advantage-text {
     width: 748px;
+    margin-bottom: 80px;
+    font-size: 18px;
   }
 
   .advantge-card-list {
@@ -123,17 +131,11 @@
     width: calc((100% - 24px * 2) / 3);
   }
 
-  .advantge-card-text-wrapper {
-  }
-
   .advantge-card-title {
     margin-top: 32px;
     margin-bottom: 24px;
     font-weight: 700;
     font-size: 32px;
     letter-spacing: 0.01em;
-  }
-
-  .advantge-card-text {
   }
 }
