@@ -10,6 +10,7 @@
 /* Sections style */
 @import url('./header.css');
 @import url('./nav.css');
+@import url('./hero.css');
 @import url('./feature.css');
 @import url('./benefits.css');
 @import url('./product.css');
@@ -36,6 +37,13 @@
 }
 
 /* ================ BASIC STYLES ================ */
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+}
+img {
+  border-radius: 32px;
+}
 
 @media screen {
   .visually-hidden {
