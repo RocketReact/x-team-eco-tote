@@ -66,10 +66,40 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .advantge {
     padding-top: 64px;
     padding-bottom: 64px;
+  }
+
+  .advantge-card-list {
+    gap: 24px;
+  }
+
+  .advantge-card-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advantge-card-item:not(:last-child) {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .advantge-card-text-wrapper {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .advantge-card-title {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .advantge {
   }
 
   .advantge-title-wrapper {
@@ -82,24 +112,26 @@
   }
 
   .advantage-text {
+    width: 748px;
   }
 
   .advantge-card-list {
-    gap: 24px;
+    column-gap: 24px;
   }
 
   .advantge-card-item {
-  }
-
-  .advantge-card-item:not(:last-child) {
-    width: calc((100% - 24px) / 2);
+    width: calc((100% - 24px * 2) / 3);
   }
 
   .advantge-card-text-wrapper {
-    margin-top: 32px;
   }
 
   .advantge-card-title {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0.01em;
   }
 
   .advantge-card-text {
