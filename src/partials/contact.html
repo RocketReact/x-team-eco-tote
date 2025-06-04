@@ -1,1 +1,88 @@
-<section class="contact"></section>
+<section class="contact">
+  <div class="container">
+    <div class="container-title">
+      <h2 class="main-title">Залишились питання? Зв'яжіться з нами!</h2>
+      <h3 class="sub-title">Ми тут, щоб допомогти!</h3>
+    </div>
+    <div class="container-form">
+      <form class="form">
+        <div class="form-field-content-wrapper">
+          <label class="form-field-label" for="user-name">Ім'я</label>
+          <div class="content-wrapper">
+            <input
+              class="form-input"
+              id="user-name"
+              name="user-name"
+              type="text"
+              required
+              placeholder="Іван"
+              minlength="5"
+              maxlength="64"
+            />
+          </div>
+        </div>
+
+        <div class="form-field-content-wrapper">
+          <label class="form-field-label" for="form-email"
+            >Електронна пошта</label
+          >
+          <div class="content-wrapper">
+            <input
+              class="form-input"
+              id="form-email"
+              name="user-email"
+              type="email"
+              required
+              placeholder="hello@ecotote.com"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            />
+          </div>
+        </div>
+
+        <div class="form-field-wrapper">
+          <label class="form-field-label" for="user-comment"
+            >Повідомлення</label
+          >
+          <textarea
+            class="text-area"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Введіть своє повідомлення..."
+            maxlength="500"
+          ></textarea>
+        </div>
+        <button class="button form-submit-btn" type="submit">Надіслати</button>
+      </form>
+    </div>
+    <div class="container-picture">
+      <picture>
+        <!-- Desktop version: used when viewport is 1158px or wider -->
+        <source
+          media="(min-width: 1158px)"
+          srcset="
+            ./img/contacts/contacts-img-desc.jpg    1x,
+            ./img/contacts/contacts-img-desc@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <!-- Tablet version: used when viewport is between 768px and 1157px -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/contacts/contacts-img-tab.jpg    1x,
+            ./img/contacts/contacts-img-tab@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <!-- Mobile version: default fallback image for screens smaller than 768px -->
+        <img
+          src="./img/contacts/contacts-img-mob.jpg"
+          srcset="./img/contacts/contacts-img-mob@2x.jpg 2x"
+          alt="Робочий стіл з матеріалами для пошиття сумки"
+          class="card-image"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
