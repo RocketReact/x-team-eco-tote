@@ -23,7 +23,8 @@
 /* ================ VARIABLES ================ */
 
 :root {
-  --secondary-font: "Comfortaa", sans-serif;
+  --main-font: 'Fira Sans', sans-serif;
+  --secondary-font: 'Comfortaa', sans-serif;
   --primary-color: #030a06;
   --white-color: #ffffff;
   --accent-color: #75d281;
@@ -38,7 +39,7 @@
 
 /* ================ BASIC STYLES ================ */
 body {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
 }
 img {
