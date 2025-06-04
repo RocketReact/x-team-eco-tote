@@ -91,6 +91,18 @@
   position: relative;
 }
 
+.container-picture {
+  background-image: image-set(
+    url('../img/contacts/contacts-img-mob.jpg') 1x,
+    url('../img/contacts/contacts-img-mob@2x.jpg') 2x
+  );
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 428px;
+  border-radius: 40px;
+}
+
 input {
   outline: none;
   display: block;
@@ -129,6 +141,13 @@ input:invalid:not(:placeholder-shown) + .error-message {
   .form-submit-btn {
     width: 249px;
   }
+
+  .container-picture {
+    background-image: image-set(
+      url('../img/contacts/contacts-img-tab.jpg') 1x,
+      url('../img/contacts/contacts-img-tab@2x.jpg') 2x
+    );
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -141,5 +160,14 @@ input:invalid:not(:placeholder-shown) + .error-message {
 
   .form-submit-btn {
     width: 198px;
+  }
+
+  .container-picture {
+    background-image: image-set(
+      url('../img/contacts/contacts-img-desc.jpg') 1x,
+      url('../img/contacts/contacts-img-desc@2x.jpg') 2x
+    );
+    height: 768px;
+    width: 644px;
   }
 }
