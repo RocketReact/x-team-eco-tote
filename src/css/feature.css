@@ -43,9 +43,10 @@
 }
 
 /* !=============== /Responsive bg ================ */
-
+.feature-section {
+  background-color: var(--background-color);
+}
 .feature {
-  background-color: var(--accent-color);
   padding-top: 64px;
   padding-bottom: 64px;
   background-position: center;
@@ -54,6 +55,7 @@
 }
 .feature-text-wrapper {
   max-width: 320px;
+  min-height: 220px;
   color: var(--white-color);
   text-align: center;
   margin-left: auto;
@@ -61,6 +63,7 @@
 }
 .feature-title {
   margin-bottom: 12px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 150%;
 }
