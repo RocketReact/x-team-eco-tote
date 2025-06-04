@@ -1,31 +1,29 @@
 /* !=============== Responsive bg ================ */
 
-/*  Потрібно буде замінити лише назви зображень щоб працювало, пробував з лише з трьома для кожної точки перелому, 2х не випробував*/
-
 .feature {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../img/Header.jpg);
+    url(../img/about/about-mob.jpg);
 }
 
 @media (min-resolution: 2x) {
   .feature {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(../img/Header.jpg);
+      url(../img/about/about-mob@2x.jpg);
   }
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .feature {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(../img/feature.jpg);
+      url(../img/about/about-tab.jpg);
   }
   @media (min-resolution: 2x) {
     .feature {
       background-image:
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../img/feature.jpg);
+        url(../img/about/about-tab@2x.jpg);
     }
   }
 }
@@ -33,13 +31,13 @@
   .feature {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(../img/deskt.jpg);
+      url(../img/about/about-desc.jpg);
   }
   @media (min-resolution: 2x) {
     .feature {
       background-image:
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../img/deskt.jpg);
+        url(../img/about/about-desc@2x.jpg);
     }
   }
 }
@@ -56,7 +54,6 @@
 }
 .feature-text-wrapper {
   max-width: 320px;
-  font-family: var(--main-font);
   color: var(--white-color);
   text-align: center;
   margin-left: auto;
@@ -65,7 +62,6 @@
 .feature-title {
   margin-bottom: 12px;
   font-weight: 600;
-  font-size: 16px;
   line-height: 150%;
 }
 .feature-subtitle {
@@ -77,11 +73,8 @@
   letter-spacing: 0.01em;
 }
 .feature-desc {
-  font-family: var(--font-family);
-  font-size: 16px;
   line-height: 160%;
   text-align: center;
-  font-family: var(--font-family);
   font-weight: 400;
 }
 @media (min-width: 768px) and (max-width: 1439px) {
