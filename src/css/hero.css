@@ -59,7 +59,6 @@
 
   .hero-content-wrapper {
     display: flex;
-    gap: 24px;
     margin-bottom: 20px;
   }
 
@@ -82,5 +81,20 @@
     height: 50px;
     transition: opacity var(--primary-transition);
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-content-wrapper {
+    justify-content: space-between;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    flex-basis: calc((100% - 32px) / 2);
+  }
+
+  .hero-text-content-wrapper {
+    flex-basis: calc((100% - 32px) / 2);
   }
 }
