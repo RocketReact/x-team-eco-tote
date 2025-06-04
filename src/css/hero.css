@@ -2,7 +2,7 @@
   .hero {
     background-color: var(--background-color);
   }
-  .container {
+  .hero-container {
     padding-top: 64px;
     padding-bottom: 64px;
   }
@@ -48,5 +48,39 @@
 
   .hero-img {
     border-radius: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    padding-top: 32px;
+    padding-bottom: 64px;
+  }
+
+  .hero-content-wrapper {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    margin-bottom: 0;
+  }
+  .hero-text-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .hero-button {
+    width: 148px;
+    height: 50px;
+    transition: opacity var(--primary-transition);
+    margin-bottom: 0;
   }
 }
