@@ -83,6 +83,12 @@
   height: 50px;
 }
 
+.form-submit-btn:hover,
+.form-submit-btn:focus {
+  background: var(--primary-color);
+  opacity: 0.5;
+}
+
 .block-image {
   border-radius: 40px;
 }
@@ -93,8 +99,8 @@
 
 .container-picture {
   background-image: image-set(
-    url('../img/contacts/contacts-img-mob.jpg') 1x,
-    url('../img/contacts/contacts-img-mob@2x.jpg') 2x
+    url('../img/contacts/contacts-img-mob.png') 1x,
+    url('../img/contacts/contacts-img-mob@2x.png') 2x
   );
   background-size: cover;
   background-position: center;
@@ -107,10 +113,6 @@ input {
   outline: none;
   display: block;
   box-sizing: border-box;
-}
-
-input:placeholder-shown {
-  border-color: gray;
 }
 
 input:invalid:not(:placeholder-shown) {
@@ -144,8 +146,8 @@ input:invalid:not(:placeholder-shown) + .error-message {
 
   .container-picture {
     background-image: image-set(
-      url('../img/contacts/contacts-img-tab.jpg') 1x,
-      url('../img/contacts/contacts-img-tab@2x.jpg') 2x
+      url('../img/contacts/contacts-img-tab.png') 1x,
+      url('../img/contacts/contacts-img-tab@2x.png') 2x
     );
   }
 }
@@ -164,8 +166,8 @@ input:invalid:not(:placeholder-shown) + .error-message {
 
   .container-picture {
     background-image: image-set(
-      url('../img/contacts/contacts-img-desc.jpg') 1x,
-      url('../img/contacts/contacts-img-desc@2x.jpg') 2x
+      url('../img/contacts/contacts-img-desc.png') 1x,
+      url('../img/contacts/contacts-img-desc@2x.png') 2x
     );
     height: 768px;
     width: 644px;
