@@ -21,8 +21,8 @@
 /* ================ VARIABLES ================ */
 
 :root {
-  --main-font: "Fira Sans", sans-serif;
-  --secondary-font: "Comfortaa", sans-serif;
+  --main-font: 'Fira Sans', sans-serif;
+  --secondary-font: 'Comfortaa', sans-serif;
   --primary-color: #030a06;
   --white-color: #ffffff;
   --accent-color: #75d281;

@@ -1,0 +1,10 @@
+/* ==========================HEADER======================== */
+.header {
+  background-color: var(--accent-color);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
