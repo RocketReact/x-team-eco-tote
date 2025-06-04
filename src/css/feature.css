@@ -1,0 +1,131 @@
+/* !=============== Responsive bg ================ */
+
+/*  Потрібно буде замінити лише назви зображень щоб працювало, пробував з лише з трьома для кожної точки перелому, 2х не випробував*/
+
+.feature {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/Header.jpg);
+}
+
+@media (min-resolution: 2x) {
+  .feature {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../img/Header.jpg);
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .feature {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../img/feature.jpg);
+  }
+  @media (min-resolution: 2x) {
+    .feature {
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../img/feature.jpg);
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .feature {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../img/deskt.jpg);
+  }
+  @media (min-resolution: 2x) {
+    .feature {
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../img/deskt.jpg);
+    }
+  }
+}
+
+/* !=============== /Responsive bg ================ */
+
+.feature {
+  background-color: var(--accent-color);
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.feature-text-wrapper {
+  max-width: 320px;
+  font-family: var(--main-font);
+  color: var(--white-color);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.feature-title {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+.feature-subtitle {
+  font-family: var(--secondary-font);
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+}
+.feature-desc {
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .feature {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .feature-text-wrapper {
+    max-width: 573px;
+    min-height: 165px;
+  }
+  .feature-title {
+    margin-bottom: 16px;
+  }
+  .feature-subtitle {
+    margin-bottom: 24px;
+  }
+  .feature-desc {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .feature {
+    padding-top: 112px;
+    padding-bottom: 94px;
+  }
+  .feature-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 768px;
+    min-height: 256px;
+  }
+  .feature-title {
+    margin-bottom: 16px;
+  }
+  .feature-subtitle {
+    margin-bottom: 24px;
+    font-size: 56px;
+    max-width: 629px;
+  }
+  .feature-desc {
+    font-size: 18px;
+    max-width: 573px;
+  }
+}
