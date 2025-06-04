@@ -57,8 +57,6 @@
   margin-bottom: 16px;
   border-radius: 32px;
   overflow: hidden;
-  width: 310px;
-  height: 372px;
 }
 
 .product-title {
@@ -103,6 +101,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
+  transition: var(--primary-transition);
+}
 
-  color: var(--primary-color) !important;
+@media screen and (min-width: 1440px) {
+  .product-btn:hover,
+  .product-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+  }
 }
