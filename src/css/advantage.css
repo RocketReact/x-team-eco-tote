@@ -75,6 +75,10 @@
     padding-bottom: 64px;
   }
 
+  .advantge-title-wrapper {
+    row-gap: 16px;
+  }
+
   .advantge-card-list {
     gap: 24px;
   }
@@ -111,6 +115,7 @@
 
   .advantge-title-wrapper {
     margin-bottom: 24px;
+    row-gap: 16px;
   }
 
   .advantge-title {
