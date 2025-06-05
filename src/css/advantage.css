@@ -76,7 +76,12 @@
   }
 
   .advantge-title-wrapper {
+    margin-bottom: 24px;
     row-gap: 16px;
+  }
+
+  .advantage-text {
+    margin-bottom: 32px;
   }
 
   .advantge-card-list {
