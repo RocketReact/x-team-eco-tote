@@ -44,6 +44,60 @@
 .address-list {
   display: none;
 }
+
+/* ==========================NAV-LIST======================== */
+.nav-list {
+  display: none;
+  gap: 32px;
+}
+
+.nav-list-item {
+  padding: 23px 0;
+}
+
+.nav-list-link {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--primary-color);
+  transition: var(--primary-transition);
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus {
+  opacity: 50%;
+}
+
+.nav-list-link:active {
+  color: #113916;
+}
+
+/* ==========================ADDRESS======================== */
+.address-list {
+  display: none;
+  gap: 16px;
+  font-style: normal;
+}
+
+.address-list-link {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--primary-color);
+  transition: var(--primary-transition);
+}
+
+.address-list-link:hover,
+.address-list-link:focus {
+  opacity: 50%;
+}
+
+.address-list-link:active {
+  color: #113916;
+}
+
 @media screen and (min-width: 768px) {
   .logo {
     margin-left: 0;
@@ -55,60 +109,15 @@
 }
 
 @media screen and (min-width: 1440px) {
-  /* ==========================NAV-LIST======================== */
-  .nav-list {
-    display: flex;
-    gap: 32px;
-  }
-
-  .nav-list-item {
-    padding: 23px 0;
-  }
-
-  .nav-list-link {
-    font-family: var(--main-font);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--primary-color);
-    transition: var(--primary-transition);
-  }
-
-  .nav-list-link:hover,
-  .nav-list-link:focus {
-    opacity: 50%;
-  }
-
-  .nav-list-link:active {
-    color: #113916;
-  }
-
-  /* ==========================ADDRESS======================== */
-  .address-list {
-    display: flex;
-    gap: 16px;
-    font-style: normal;
-  }
-
-  .address-list-link {
-    font-family: var(--main-font);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--primary-color);
-    transition: var(--primary-transition);
-  }
-
-  .address-list-link:hover,
-  .address-list-link:focus {
-    opacity: 50%;
-  }
-
-  .address-list-link:active {
-    color: #113916;
-  }
-
   .burger {
     display: none;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .address-list {
+    display: flex;
   }
 }
