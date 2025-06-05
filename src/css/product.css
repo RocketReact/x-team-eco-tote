@@ -62,7 +62,7 @@
 .product-title {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.01em;
   color: var(--primary-color);
@@ -109,5 +109,8 @@
   .product-btn:focus {
     background-color: var(--accent-color);
     color: var(--background-color);
+  }
+  .product-title {
+    font-size: 48px;
   }
 }
