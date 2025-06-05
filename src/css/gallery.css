@@ -11,7 +11,6 @@
     }
 }
 
-
 .gallery-title {
     font-family: "Comfortaa", sans-serif;
     font-weight: 700;
@@ -32,86 +31,85 @@
     margin-bottom: 32px;
 }
 
+/* ====================== gallery ========================= */
 .gallery-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     gap: 16px;
 }
 
-.gallery-item-wrapper-left {
+.gallery-item-wrapper {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
+.gallery-item-wrapper-left,
 .gallery-item-wrapper-right {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 16px;
+}
+
+.gallery-list-desc {
+    display: none;
 }
 
 @media screen and (min-width: 768px) {
+
     .gallery-list {
+        display: flex;
+        justify-content: center;
         flex-direction: row;
-        flex-wrap: wrap;
+        gap: 24px;
     }
 
-    .order-block-1 {
-        order: 4;
+    .gallery-item-wrapper-left {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
 
-    .order-block-2 {
-        order: 2;
+    .gallery-item-wrapper-right {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
 
-    .order-block-3 {
-        order: 3;
-    }
-
-    .order-block-4 {
-        order: 1;
-
+    .gallery-list-item {
+        width: 340px;
     }
 }
 
 @media screen and (min-width: 1440px) {
 
     .gallery-list {
-        flex-direction: row;
+        display: none;
     }
 
-    .order-block-1 {
-        order: 4;
-    }
-
-    .order-block-2 {
-        order: 2;
-    }
-
-    .order-block-3 {
-        order: 3;
-    }
-
-    .order-block-4 {
-        order: 1;
-
-    }
-
-    /* .gallery-item-wrapper {
+    .gallery-list-desc {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        flex-direction: row;
         gap: 24px;
-    } */
+    }
+
+    .gallery-item-wrapper {
+        display: flex;
+
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+
+    .gallery-item-wrapper-second-part {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .gallery-list-item {
+        width: 421px;
+    }
 }
-
-
-
-.gallery-list-item {
-    display: flex;
-    flex-direction: row;
-    flex: 0 0 auto;
-}
-
-.gallery-img {}
