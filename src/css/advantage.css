@@ -1,0 +1,150 @@
+@media screen {
+  .advantge {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #ebf8ed;
+  }
+  .container {
+  }
+
+  .advantge-title-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .advantge-title {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: var(--primary-color);
+  }
+
+  .advantage-subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--primary-color);
+  }
+
+  .advantage-text {
+    margin-bottom: 48px;
+    line-height: 1.6;
+    color: var(--primary-color);
+  }
+
+  .advantge-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+  }
+
+  .advantge-card-item {
+  }
+
+  .advantge-card-text-wrapper {
+    margin-top: 8px;
+  }
+
+  .advantge-card-title {
+    margin-bottom: 4px;
+
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: var(--primary-color);
+  }
+
+  .advantge-card-text {
+    line-height: 1.6;
+    color: var(--primary-color);
+  }
+}
+
+/* ================= TABLET ================== */
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .advantge {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .advantge-title-wrapper {
+    margin-bottom: 24px;
+    row-gap: 16px;
+  }
+
+  .advantage-text {
+    margin-bottom: 32px;
+  }
+
+  .advantge-card-list {
+    gap: 24px;
+  }
+
+  .advantge-card-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advantge-card-item:not(:last-child) {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .advantge-card-text-wrapper {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .advantge-card-title {
+    margin-bottom: 8px;
+  }
+}
+
+/* ================= DESKTOP ================== */
+
+@media screen and (min-width: 1440px) {
+  .advantge {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .advantge-title-wrapper {
+    margin-bottom: 24px;
+    row-gap: 16px;
+  }
+
+  .advantge-title {
+    font-size: 48px;
+  }
+
+  .advantage-text {
+    width: 748px;
+    margin-bottom: 80px;
+    font-size: 18px;
+  }
+
+  .advantge-card-list {
+    column-gap: 24px;
+  }
+
+  .advantge-card-item {
+    width: calc((100% - 24px * 2) / 3);
+  }
+
+  .advantge-card-title {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0.01em;
+  }
+}
