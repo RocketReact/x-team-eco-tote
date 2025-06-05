@@ -106,6 +106,7 @@
 
   .advantge-card-title {
     margin-bottom: 8px;
+    margin-top: 0;
   }
 }
 
@@ -140,8 +141,11 @@
     width: calc((100% - 24px * 2) / 3);
   }
 
-  .advantge-card-title {
+  .advantge-card-text-wrapper {
     margin-top: 32px;
+  }
+
+  .advantge-card-title {
     margin-bottom: 24px;
     font-weight: 700;
     font-size: 32px;
