@@ -80,6 +80,9 @@
     }
 
     .gallery-wrapper-desc {
+      .gallery-title{
+        font-size: 48px;
+      }
         display: flex;
         justify-content: center;
         flex-direction: row;
