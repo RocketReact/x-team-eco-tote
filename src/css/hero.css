@@ -30,6 +30,9 @@
     height: 50px;
     transition: opacity var(--primary-transition);
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .hero-button:hover,
@@ -44,6 +47,7 @@
 
   .hero-button-link {
     color: var(--white-color);
+    line-height: 0;
   }
 
   .hero-img {
