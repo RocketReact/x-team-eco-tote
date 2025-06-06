@@ -1,5 +1,5 @@
 @media screen {
-  .advantge {
+  .advantage {
     padding-top: 32px;
     padding-bottom: 32px;
     background-color: #ebf8ed;
@@ -7,15 +7,15 @@
   .container {
   }
 
-  .advantge-title-wrapper {
+  .advantage-title-wrapper {
     display: flex;
     flex-direction: column-reverse;
     row-gap: 12px;
     margin-bottom: 20px;
   }
 
-  .advantge-title {
-    font-family: 'Comfortaa', sans-serif;
+  .advantage-title {
+    font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -36,20 +36,20 @@
     color: var(--primary-color);
   }
 
-  .advantge-card-list {
+  .advantage-card-list {
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
   }
 
-  .advantge-card-item {
+  .advantage-card-item {
   }
 
-  .advantge-card-text-wrapper {
+  .advantage-card-text-wrapper {
     margin-top: 8px;
   }
 
-  .advantge-card-title {
+  .advantage-card-title {
     margin-bottom: 4px;
 
     font-family: var(--secondary-font);
@@ -60,7 +60,7 @@
     color: var(--primary-color);
   }
 
-  .advantge-card-text {
+  .advantage-card-text {
     line-height: 1.6;
     color: var(--primary-color);
   }
@@ -69,34 +69,35 @@
 /* ================= TABLET ================== */
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
-  .advantge {
+  .advantage {
     padding-top: 64px;
     padding-bottom: 64px;
   }
 
-  .advantge-title-wrapper {
+  .advantage-title-wrapper {
     margin-bottom: 24px;
     row-gap: 16px;
   }
 
   .advantage-text {
     margin-bottom: 32px;
+    max-width: 580px;
   }
 
-  .advantge-card-list {
+  .advantage-card-list {
     gap: 24px;
   }
 
-  .advantge-card-item {
+  .advantage-card-item {
     display: flex;
     flex-direction: column;
   }
 
-  .advantge-card-item:not(:last-child) {
+  .advantage-card-item:not(:last-child) {
     width: calc((100% - 24px) / 2);
   }
 
-  .advantge-card-text-wrapper {
+  .advantage-card-text-wrapper {
     margin-top: 32px;
     display: flex;
     flex-direction: column;
@@ -104,7 +105,7 @@
     height: 100%;
   }
 
-  .advantge-card-title {
+  .advantage-card-title {
     margin-bottom: 8px;
   }
 }
@@ -112,17 +113,17 @@
 /* ================= DESKTOP ================== */
 
 @media screen and (min-width: 1440px) {
-  .advantge {
+  .advantage {
     padding-top: 64px;
     padding-bottom: 64px;
   }
 
-  .advantge-title-wrapper {
+  .advantage-title-wrapper {
     margin-bottom: 24px;
     row-gap: 16px;
   }
 
-  .advantge-title {
+  .advantage-title {
     font-size: 48px;
   }
 
@@ -132,19 +133,19 @@
     font-size: 18px;
   }
 
-  .advantge-card-list {
+  .advantage-card-list {
     column-gap: 24px;
   }
 
-  .advantge-card-item {
+  .advantage-card-item {
     width: calc((100% - 24px * 2) / 3);
   }
 
-  .advantge-card-text-wrapper {
+  .advantage-card-text-wrapper {
     margin-top: 32px;
   }
 
-  .advantge-card-title {
+  .advantage-card-title {
     margin-bottom: 24px;
     font-size: 32px;
   }
