@@ -24,6 +24,14 @@ img {
   border-radius: 32px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 @media screen {
   .visually-hidden {
     position: absolute;
