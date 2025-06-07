@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" crossorigin href="/x-team-eco-tote/assets/index-BHtxJ0uN.css">
+    <link rel="stylesheet" crossorigin href="/x-team-eco-tote/assets/index-T4zKU9_7.css">
   </head>
   <body>
     <header class="header">
@@ -818,7 +818,74 @@
   </div>
 </section>
 
-      <section class="contact"></section>
+      <section class="contact">
+  <div class="container main-flex-container">
+    <div class="sub-flex-container">
+      <div class="container-title">
+        <h2 class="main-title">Залишились питання? Зв'яжіться з нами!</h2>
+        <h3 class="sub-title">Ми тут, щоб допомогти!</h3>
+      </div>
+      <div class="container-form">
+        <form class="form">
+          <div class="form-field-content-wrapper">
+            <label class="form-field-label" for="user-name">Ім'я</label>
+            <div class="content-wrapper">
+              <input
+                class="form-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+                required
+                placeholder="Іван"
+                minlength="5"
+                maxlength="64"
+              />
+              <p class="error-message">
+                Ім’я повинно містити від 5 до 64 символів
+              </p>
+            </div>
+          </div>
+
+          <div class="form-field-content-wrapper">
+            <label class="form-field-label" for="form-email"
+              >Електронна пошта</label
+            >
+            <div class="content-wrapper">
+              <input
+                class="form-input"
+                id="form-email"
+                name="user-email"
+                type="email"
+                required
+                placeholder="hello@ecotote.com"
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              />
+              <p class="error-message">Email має бути у форматі name@dom.com</p>
+            </div>
+          </div>
+
+          <div class="form-field-content-wrapper">
+            <label class="form-field-label" for="user-comment"
+              >Повідомлення</label
+            >
+            <textarea
+              class="form-input text-area"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Введіть своє повідомлення..."
+              maxlength="500"
+            ></textarea>
+          </div>
+          <button class="button form-submit-btn" type="submit">
+            Надіслати
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="container-picture"></div>
+  </div>
+</section>
+
     </main>
 
     <footer class="footer">
