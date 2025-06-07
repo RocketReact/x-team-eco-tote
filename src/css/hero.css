@@ -37,6 +37,7 @@
 
   .hero-button:hover,
   .hero-button:focus {
+    cursor: pointer;
     opacity: var(--hover-link-opacity);
   }
 
