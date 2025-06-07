@@ -44,6 +44,7 @@
 .burger {
   background: transparent;
   border: none;
+  padding: 12px 0;
 }
 @media screen and (min-width: 768px) {
   .nav-list-mob-menu {

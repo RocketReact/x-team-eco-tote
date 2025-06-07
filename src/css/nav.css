@@ -11,7 +11,9 @@
 }
 
 /* ==========================LOGO======================== */
-
+.logo {
+  padding: 12px 0;
+}
 .logo-icon {
   fill: var(--primary-color);
 }
