@@ -162,6 +162,9 @@ input:invalid:not(:placeholder-shown) + .error-message {
   .sub-flex-container {
     width: 644px;
   }
+  .main-title {
+    font-size: 48px;
+  }
 
   .form-submit-btn {
     width: 198px;
