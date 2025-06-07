@@ -75,6 +75,10 @@
   resize: none;
 }
 
+.form-input:focus::placeholder {
+  color: transparent;
+}
+
 .form-submit-btn {
   width: 100%;
   border: 1px solid var(--primary-color);
@@ -143,6 +147,10 @@ input:invalid:not(:placeholder-shown) + .error-message {
     width: 468px;
   }
 
+  .contact {
+    padding: 64px 0;
+  }
+
   .form-submit-btn {
     width: 249px;
   }
@@ -176,6 +184,10 @@ input:invalid:not(:placeholder-shown) + .error-message {
       url('../img/contacts/contacts-img-desc@2x.png') 2x
     );
     height: 768px;
+    width: 644px;
+  }
+
+  .container-title {
     width: 644px;
   }
 }
