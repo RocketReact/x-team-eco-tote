@@ -1,1 +1,67 @@
-<section class="contact"></section>
+<section class="contact">
+  <div class="container main-flex-container">
+    <div class="sub-flex-container">
+      <div class="container-title">
+        <h2 class="main-title">Залишились питання? Зв'яжіться з нами!</h2>
+        <h3 class="sub-title">Ми тут, щоб допомогти!</h3>
+      </div>
+      <div class="container-form">
+        <form class="form">
+          <div class="form-field-content-wrapper">
+            <label class="form-field-label" for="user-name">Ім'я</label>
+            <div class="content-wrapper">
+              <input
+                class="form-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+                required
+                placeholder="Іван"
+                minlength="5"
+                maxlength="64"
+              />
+              <p class="error-message">
+                Ім’я повинно містити від 5 до 64 символів
+              </p>
+            </div>
+          </div>
+
+          <div class="form-field-content-wrapper">
+            <label class="form-field-label" for="form-email"
+              >Електронна пошта</label
+            >
+            <div class="content-wrapper">
+              <input
+                class="form-input"
+                id="form-email"
+                name="user-email"
+                type="email"
+                required
+                placeholder="hello@ecotote.com"
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              />
+              <p class="error-message">Email має бути у форматі name@dom.com</p>
+            </div>
+          </div>
+
+          <div class="form-field-content-wrapper">
+            <label class="form-field-label" for="user-comment"
+              >Повідомлення</label
+            >
+            <textarea
+              class="form-input text-area"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Введіть своє повідомлення..."
+              maxlength="500"
+            ></textarea>
+          </div>
+          <button class="button form-submit-btn" type="submit">
+            Надіслати
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="container-picture"></div>
+  </div>
+</section>
