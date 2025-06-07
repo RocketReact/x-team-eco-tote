@@ -109,6 +109,13 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .logo {
+    padding: 11.25px 0;
+  }
+  .logo-icon {
+   width: 106.51px;
+   height: 45.65px;
+ }
   .burger {
     display: none;
   }
