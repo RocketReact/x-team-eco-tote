@@ -72,6 +72,7 @@
 
   .hero-title {
     margin-bottom: 0;
+    max-width: 340px;
   }
   .hero-text-content-wrapper {
     display: flex;
@@ -100,6 +101,7 @@
   .hero-title {
     font-size: 56px;
     flex-basis: calc((100% - 32px) / 2);
+    max-width: 640px;
   }
 
   .hero-text-content-wrapper {
