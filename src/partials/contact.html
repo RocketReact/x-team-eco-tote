@@ -53,8 +53,11 @@
               name="user-comment"
               id="user-comment"
               placeholder="Введіть своє повідомлення..."
+              minlength="5"
               maxlength="500"
+              required
             ></textarea>
+            <p class="error-message textarea">Це поле не може бути порожнім</p>
           </div>
           <button class="button form-submit-btn" type="submit">
             Надіслати

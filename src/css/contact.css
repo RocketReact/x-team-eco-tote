@@ -120,30 +120,41 @@
   border-radius: 40px;
 }
 
-input {
+input,
+textarea {
   outline: none;
   display: block;
   box-sizing: border-box;
 }
 
-input:invalid:not(:placeholder-shown) {
-  border-color: red;
-  color: red;
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+  border-color: var(--error-color);
+  color: var(--error-color);
+}
+
+.form-field-content-wrapper {
+  position: relative;
 }
 
 .error-message {
   position: absolute;
   top: 100%;
   left: 0;
-  color: red;
-  font-size: 14px;
-  margin-top: 4px;
+  color: var(--error-color);
+  font-size: 12px;
+  line-height: 160%;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
 
-input:invalid:not(:placeholder-shown) + .error-message {
+.error-message.textarea {
+  font-size: 16px;
+}
+
+input:invalid:not(:placeholder-shown) + .error-message,
+textarea:invalid:not(:placeholder-shown) + .error-message {
   opacity: 1;
 }
 
