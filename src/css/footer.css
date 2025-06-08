@@ -10,7 +10,9 @@
     padding-top: 48px;
     padding-bottom: 48px;
   }
-
+  .footer-logo {
+    display: block;
+  }
   .footer-logo-icon {
     fill: var(--primary-color);
   }
@@ -137,11 +139,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .footer-logo {
-    display: block;
-    margin-bottom: 32px;
   }
 
   .footer-logo-icon {
