@@ -1,90 +1,166 @@
 <section class="gallery-section" id="gallery">
-    <div class="container">
-        <h2 class="gallery-title">Галерея зображень</h2>
-        <h3 class="gallery-sub-title">EcoTotes у повсякденному житті</h3>
+  <div class="container">
+    <h2 class="gallery-title">Галерея зображень</h2>
+    <h3 class="gallery-sub-title">EcoTotes у повсякденному житті</h3>
 
-        <!-- tablet -->
-        <div class="gallery-wrapper">
-            <ul class="gallery-list-right">
+    <!-- tablet -->
+    <div class="gallery-wrapper">
+      <ul class="gallery-list-right">
+        <li class="gallery-list-item">
+          <picture>
+            <source
+              srcset="
+                ./img/gallery/gallery-carrots-tab.png    1x,
+                ./img/gallery/gallery-carrots-tab@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./img/gallery/gallery-carrots-mob.png    1x,
+                ./img/gallery/gallery-carrots-mob@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              class="gallery-img"
+              src="./img/gallery/gallery-carrots-mob.png"
+              alt="Carrots"
+              loading="lazy"
+            />
+          </picture>
+        </li>
 
-                <li class="gallery-list-item">
-                    <picture>
-                        <source
-                            srcset="./img/gallery/gallery-carrots-tab.png 1x, ./img/gallery/gallery-carrots-tab@2x.png 2x"
-                            media="(min-width: 768px)">
-                        <source
-                            srcset="./img/gallery/gallery-carrots-mob.png 1x, ./img/gallery/gallery-carrots-mob@2x.png 2x"
-                            media="(max-width: 767px)">
-                        <img class="gallery-img" src="./img/gallery/gallery-carrots-mob.png" alt="Carrots" />
-                    </picture>
-                </li>
+        <li class="gallery-list-item">
+          <picture>
+            <source
+              srcset="
+                ./img/gallery/gallery-woman-tab.png    1x,
+                ./img/gallery/gallery-woman-tab@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./img/gallery/gallery-woman-mob.png    1x,
+                ./img/gallery/gallery-woman-mob@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              class="gallery-img"
+              src="./img/gallery/gallery-woman-mob.png"
+              alt="Woman"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+      </ul>
+      <ul class="gallery-list-left">
+        <li class="gallery-list-item">
+          <picture>
+            <source
+              srcset="
+                ./img/gallery/gallery-man-tab.png    1x,
+                ./img/gallery/gallery-man-tab@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./img/gallery/gallery-man-mob.png    1x,
+                ./img/gallery/gallery-man-mob@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              class="gallery-img"
+              src="./img/gallery/gallery-man-mob.png"
+              alt="Man"
+              loading="lazy"
+            />
+          </picture>
+        </li>
 
-                <li class="gallery-list-item">
-                    <picture>
-                        <source
-                            srcset="./img/gallery/gallery-woman-tab.png 1x, ./img/gallery/gallery-woman-tab@2x.png 2x"
-                            media="(min-width: 768px)">
-                        <source
-                            srcset="./img/gallery/gallery-woman-mob.png 1x, ./img/gallery/gallery-woman-mob@2x.png 2x"
-                            media="(max-width: 767px)">
-                        <img class="gallery-img" src="./img/gallery/gallery-woman-mob.png" alt="Woman" />
-                    </picture>
-                </li>
-
-            </ul>
-            <ul class="gallery-list-left">
-
-                <li class="gallery-list-item">
-                    <picture>
-                        <source srcset="./img/gallery/gallery-man-tab.png 1x, ./img/gallery/gallery-man-tab@2x.png 2x"
-                            media="(min-width: 768px)">
-                        <source srcset="./img/gallery/gallery-man-mob.png 1x, ./img/gallery/gallery-man-mob@2x.png 2x"
-                            media="(max-width: 767px)">
-                        <img class="gallery-img" src="./img/gallery/gallery-man-mob.png" alt="Man" />
-                    </picture>
-                </li>
-
-                <li class="gallery-list-item">
-                    <picture>
-                        <source srcset="./img/gallery/gallery-bag-tab.png 1x, ./img/gallery/gallery-bag-tab@2x.png 2x"
-                            media="(min-width: 768px)">
-                        <source srcset="./img/gallery/gallery-bag-mob.png 1x, ./img/gallery/gallery-bag-mob@2x.png 2x"
-                            media="(max-width: 767px)">
-                        <img class="gallery-img" src="./img/gallery/gallery-bag-mob.png" alt="Bag" />
-                    </picture>
-                </li>
-            </ul>
-        </div>
-
-
-        <!-- desktop -->
-        <div class="gallery-wrapper-desc">
-            <ul class="gallery-list-desc">
-
-                <li class="gallery-list-item">
-                    <img class="gallery-img" src="./img/gallery/gallery-bag-desc.png"
-                        srcset="./img/gallery/gallery-bag-desc@2x.png" alt="Bag" width="421" height="421" />
-                </li>
-
-                <li class="gallery-list-item">
-                    <img class="gallery-img" src="./img/gallery/gallery-carrots-desc.png"
-                        srcset="./img/gallery/gallery-carrots-desc@2x.png" alt="Carrots" width="421" height="421" />
-                </li>
-
-            </ul>
-            <ul class="gallery-list-desc-second-part">
-
-                <li class="gallery-list-item">
-                    <img class="gallery-img" src="./img/gallery/gallery-man-desc.png "
-                        srcset="./img/gallery/gallery-man-desc@2x.png" alt="Man" width="421" height="865" />
-                </li>
-
-                <li class="gallery-list-item">
-                    <img class="gallery-img" src="./img/gallery/gallery-woman-desc.png"
-                        srcset="./img/gallery/gallery-woman-desc@2x.png" alt="Woman" width="421" height="865" />
-                </li>
-            </ul>
-        </div>
-
+        <li class="gallery-list-item">
+          <picture>
+            <source
+              srcset="
+                ./img/gallery/gallery-bag-tab.png    1x,
+                ./img/gallery/gallery-bag-tab@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./img/gallery/gallery-bag-mob.png    1x,
+                ./img/gallery/gallery-bag-mob@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              class="gallery-img"
+              src="./img/gallery/gallery-bag-mob.png"
+              alt="Bag"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+      </ul>
     </div>
+
+    <!-- desktop -->
+    <div class="gallery-wrapper-desc">
+      <ul class="gallery-list-desc">
+        <li class="gallery-list-item">
+          <img
+            class="gallery-img"
+            src="./img/gallery/gallery-bag-desc.png"
+            srcset="./img/gallery/gallery-bag-desc@2x.png"
+            alt="Bag"
+            width="421"
+            height="421"
+            loading="lazy"
+          />
+        </li>
+
+        <li class="gallery-list-item">
+          <img
+            class="gallery-img"
+            src="./img/gallery/gallery-carrots-desc.png"
+            srcset="./img/gallery/gallery-carrots-desc@2x.png"
+            alt="Carrots"
+            width="421"
+            height="421"
+            loading="lazy"
+          />
+        </li>
+      </ul>
+      <ul class="gallery-list-desc-second-part">
+        <li class="gallery-list-item">
+          <img
+            class="gallery-img"
+            src="./img/gallery/gallery-man-desc.png "
+            srcset="./img/gallery/gallery-man-desc@2x.png"
+            alt="Man"
+            width="421"
+            height="865"
+            loading="lazy"
+          />
+        </li>
+
+        <li class="gallery-list-item">
+          <img
+            class="gallery-img"
+            src="./img/gallery/gallery-woman-desc.png"
+            srcset="./img/gallery/gallery-woman-desc@2x.png"
+            alt="Woman"
+            width="421"
+            height="865"
+            loading="lazy"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>
